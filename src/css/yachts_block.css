@@ -1,0 +1,28 @@
+.title-yachtsblock {
+  color: var(--white, #f6f5ef);
+  font-family: DM Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 39.6px */
+  letter-spacing: -1.62px;
+  width: 310px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title-yachtsblock {
+    font-size: 70px;
+    line-height: 110%; /* 77px */
+    letter-spacing: -3.15px;
+    width: 641px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .title-yachtsblock {
+    font-size: 100px;
+    line-height: 110%; /* 110px */
+    letter-spacing: -5.5px;
+    width: 882px;
+  }
+}
