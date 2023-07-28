@@ -38,6 +38,6 @@ img {
   height: auto;
 }
 body {
-  font-size: 'DMSans-Bold';
+  font-family: 'DMSans' sans-serif;
   background-color: var(--main-darkblue-color);
 }
