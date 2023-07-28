@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'DMSans-Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: local('DMSans-Bold');
+  src: url('../fonts/DMSans-Bold.ttf') format(truetype),
+    url('../fonts/DMSans-Bold.woff') format(woff),
+    url('../fonts/DMSans-Bold.woff2') format(woff2);
+  font-display: swap;
+}
