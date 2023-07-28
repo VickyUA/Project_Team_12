@@ -74,15 +74,21 @@
   .header-container {
     padding-left: 32px;
     padding-right: 32px;
+    justify-content: space-between;
   }
 }
 .header-nav {
   display: flex;
   align-items: center;
 }
+
 .header-yahts-icon-container {
+  display: flex;
+  gap: 8px;
 }
 .header-logo {
+}
+.header-navigation-container {
 }
 .header-nav-list {
   display: none;
