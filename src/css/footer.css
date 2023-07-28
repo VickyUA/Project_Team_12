@@ -1,0 +1,142 @@
+
+    /* Футер */
+.footer-section {
+background-color: #11131F;
+border-top: 1px solid rgba(246, 245, 239, 0.20);
+padding-top: 41px;
+}
+@media only screen and (min-width: 768px) {
+.footer-section {
+padding-top: 65px;
+      
+    }
+  }
+
+@media only screen and (min-width: 768px) {
+.footer-container {
+display: flex;
+justify-content: center;
+align-items: baseline;
+  }
+}
+.footer-logo-text {
+color: var(--white, #F6F5EF);
+font-family: DM Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.14; 
+letter-spacing: 0.42px;
+text-transform: uppercase;
+display: flex;
+justify-content: baseline;
+gap: 8px;
+}
+@media only screen and (min-width: 768px) {
+.footer-logo-text {
+font-size: 18px;
+line-height: 1.18;
+letter-spacing: 0.54px;
+margin-right: 130px;
+  }
+}
+.footer-logo-container {
+margin-bottom: 41px;
+}
+.footer-list {
+font-family: DM Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.18; 
+letter-spacing: 0.42px;
+text-transform: uppercase;
+display: flex;
+flex-direction: column;
+gap: 14px;
+margin-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+.footer-list{
+gap: 24px;
+margin-bottom: 100px;
+margin-right: 143px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+.footer-list {
+flex-direction: row;
+margin-bottom: 186px;
+  }
+}
+.footer-nav-link {
+color: #F6F5EF;
+}
+.footer-text {
+color: #F6F5EF;
+font-family: DM Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.1;
+text-transform: uppercase;
+}
+.footer-text-police {
+color: rgba(246, 245, 239, 0.50);
+text-align: center;
+font-family: DM Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.18;
+letter-spacing: 0.36px;
+
+}
+@media only screen and (min-width: 768px) {
+.footer-text-polic{
+font-size: 14px;
+letter-spacing: 0.42px;
+  }
+}
+.footer-text-police-item {
+display: flex;
+justify-content: center;
+gap: 14px;
+}
+@media only screen and (min-width: 768px) {
+.footer-text-police-item {
+gap: 32px;
+  }
+}
+.footer-social-list {
+margin-bottom: 40px;
+display: flex;
+gap: 14px;
+}
+@media only screen and (min-width: 768px) {
+.footer-social-list {
+gap: 16px;
+margin-bottom: 16px;
+  }
+}
+.footer-logo {
+fill: #A1B5BA;
+
+}
+@media only screen and (min-width: 768px) {
+    .footer-logo {
+    width: 20px;
+    height: 23px;
+  }
+}
+
+
+.footer-icons-social {
+border: 1px solid rgba(246, 245, 239, 0.50);
+padding: 8px 8px;
+border-radius: 6px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 0;
+}
