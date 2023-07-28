@@ -23,6 +23,7 @@
     line-height: 110%; /* 77px */
     letter-spacing: -3.15px;
     width: 641px;
+    margin-bottom: 64px;
   }
 }
 
@@ -55,8 +56,20 @@
   padding: 14px 28px;
 }
 
+@media only screen and (min-width: 768px) {
+  .rental-btn {
+    width: 131px;
+    height: 48px;
+  }
+}
+
+.card-rental {
+  max-width: 375px;
+}
+
 .card-set {
   display: flex;
+  padding: 0 20px;
 }
 
 .card-set-list {
@@ -64,11 +77,30 @@
   gap: 23px;
 }
 
+@media only screen and (min-width: 768px) {
+  .card-set-list {
+    gap: 6px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .card-set-list {
+    gap: 16px;
+  }
+}
+
 .card-item {
   background: #1f212d;
   width: 335px;
   height: 469px;
   border-radius: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .card-item {
+    width: 354px;
+    height: 508px;
+  }
 }
 
 .title-card {
