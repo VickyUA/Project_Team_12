@@ -1,12 +1,20 @@
+.section-box {
+  width: 335px;
+  height: auto;
+  padding: 0 20px;
+  margin-bottom: 80px;
+}
+
 .title-yachtsblock {
   color: var(--white, #f6f5ef);
-  font-family: DM Sans;
+  font-family: DM Sans sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
   line-height: 110%; /* 39.6px */
   letter-spacing: -1.62px;
   width: 310px;
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -25,4 +33,103 @@
     letter-spacing: -5.5px;
     width: 882px;
   }
+}
+
+.rental-btn {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: teal;
+  background-color: lightblue;
+  font-family: DM Sans, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+  cursor: pointer;
+  /* display: block; */
+  width: 131px;
+  height: 43px;
+  border: 1px solid #f6f5ef;
+  border-radius: 60px;
+  padding: 14px 28px;
+}
+
+.card-set {
+  display: flex;
+}
+
+.card-set-list {
+  display: flex;
+  gap: 23px;
+}
+
+.card-item {
+  background: #1f212d;
+  width: 335px;
+  height: 469px;
+  border-radius: 20px;
+}
+
+.title-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  margin-bottom: 24px;
+}
+
+.name-yachts {
+  color: #f6f5ef;
+  font-family: DM Sans, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.045em;
+}
+
+.luxury {
+  color: #f6f5ef;
+  opacity: 0.5;
+  font-family: DM Sans, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  padding-left: 24px;
+}
+
+.quality-list,
+.quantity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.quality-item {
+  color: var(--white, #f6f5ef);
+  font-family: DM Sans, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.quantity-item {
+  color: var(--white, #f6f5ef);
+  font-family: DM Sans, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.42px;
 }
