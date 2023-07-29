@@ -1,7 +1,5 @@
 
-    /* Футер */
 .footer-section {
-background-color: #11131F;
 border-top: 1px solid rgba(246, 245, 239, 0.20);
 padding-top: 41px;
 }
@@ -15,13 +13,14 @@ padding-top: 65px;
 @media only screen and (min-width: 768px) {
 .footer-container {
 display: flex;
-justify-content: center;
+justify-content: space-between;
 align-items: baseline;
+padding-right: 0;
   }
 }
 .footer-logo-text {
-color: var(--white, #F6F5EF);
-font-family: DM Sans;
+color: var(--white-title-color);
+font-family: 'DM Sans', sans-serif;
 font-size: 14px;
 font-style: normal;
 font-weight: 700;
@@ -29,7 +28,7 @@ line-height: 1.14;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 display: flex;
-justify-content: baseline;
+align-items: baseline;
 gap: 8px;
 }
 @media only screen and (min-width: 768px) {
@@ -43,8 +42,13 @@ margin-right: 130px;
 .footer-logo-container {
 margin-bottom: 41px;
 }
+@media only screen and (min-width: 768px) {
+  .footer-logo-container {
+    margin-bottom:0;
+  }
+}
 .footer-list {
-font-family: DM Sans;
+font-family: 'DM Sans', sans-serif;
 font-size: 14px;
 font-style: normal;
 font-weight: 700;
@@ -70,21 +74,22 @@ margin-bottom: 186px;
   }
 }
 .footer-nav-link {
-color: #F6F5EF;
+color: var(--white-title-color);
 }
 .footer-text {
-color: #F6F5EF;
-font-family: DM Sans;
+color: var(--white-title-color);
+font-family:'DM Sans', sans-serif;
 font-size: 14px;
 font-style: normal;
 font-weight: 700;
 line-height: 1.1;
 text-transform: uppercase;
+margin-bottom: 16px;
 }
 .footer-text-police {
 color: rgba(246, 245, 239, 0.50);
 text-align: center;
-font-family: DM Sans;
+font-family: 'DM Sans', sans-serif;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
@@ -121,7 +126,6 @@ margin-bottom: 16px;
 }
 .footer-logo {
 fill: #A1B5BA;
-
 }
 @media only screen and (min-width: 768px) {
     .footer-logo {
@@ -130,8 +134,10 @@ fill: #A1B5BA;
   }
 }
 
-
 .footer-icons-social {
+fill: var(--white-title-color);
+width: 40px;
+height: 40px;
 border: 1px solid rgba(246, 245, 239, 0.50);
 padding: 8px 8px;
 border-radius: 6px;
