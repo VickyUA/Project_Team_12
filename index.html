@@ -12,8 +12,8 @@
     />
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/Project_Team_12/assets/index-c798a3e6.js"></script>
-    <link rel="stylesheet" href="/Project_Team_12/assets/index-5353cd13.css">
+    <script type="module" crossorigin src="/Project_Team_12/assets/index-f84733ea.js"></script>
+    <link rel="stylesheet" href="/Project_Team_12/assets/index-0fac71ad.css">
   </head>
   <body>
     <header>
@@ -145,12 +145,21 @@
       <!--Yachts Block.Developer:MarkBellinzon(Марк Беллінзон) -->
       <!-- Yahts Block -->
 <section>
-  <div class="section-box gradient">
+  <div class="gradient"></div>
+  <div class="gradiend"></div>
+  <div class="section-box">
     <h2 class="title-yachtsblock">
       Choose your dream yacht and sail away into the sunset
     </h2>
 
-    <button type="button" class="rental-btn">Yacht rental</button>
+    <form>
+      <input
+        type="button"
+        onclick="window.location.href = '#rental';"
+        value="Yacht rental"
+      />
+    </form>
+    <!-- <button type="button" class="rental-btn">Yacht rental</button> -->
   </div>
 
   <!-- Cards -->
@@ -453,19 +462,20 @@
     <div class="swiper-button-next"></div> -->
     <div class="swiper-buttons">
       <button class="swiper-button-prev">
-        <svg class="prev-icon" width="18" higth="8">
-          <use href=""></use>
+        <svg class="prev-icon" width="50" higth="25">
+          <use href="../img/sprite.svg#icon-left"></use>
         </svg>
       </button>
       <button class="swiper-button-next">
-        <svg class="next-icon" width="18" higth="8">
-          <use href=""></use>
+        <svg class="next-icon" width="50" higth="25">
+          <use href="../img/sprite.svg#icon-rigth"></use>
         </svg>
       </button>
     </div>
   </div>
+</section>
 
-  <!-- <div class="card-rental">
+<!-- <div class="card-rental">
     <div class="card-set">
       <ul class="card-set-list">
         <li class="card-item">
@@ -810,7 +820,6 @@
       <img src="../img/mob_webp/arrow_right.png" alt="button_rigth" />
     </div>
   </div> -->
-</section>
 
       <!--Service Block.Developer:Balinskiy(Юрій Балінський)-->
       
