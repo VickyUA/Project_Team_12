@@ -1,16 +1,7 @@
 .section-box {
-  width: 335px;
-  height: auto;
-  padding: 0 20px;
-  margin-bottom: 80px;
-}
-
-.gradient {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(../img/mob_webp/ellipsegrad.png);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+
   border-radius: 414px;
   opacity: 0.6000000238418579;
   background: #91afba;
@@ -18,6 +9,57 @@
   width: 414px;
   height: 414px;
   transform: rotate(-45.074deg); */
+
+  max-width: 335px;
+  height: auto;
+  padding: 0 20px;
+  margin-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-box {
+    max-width: 768px;
+    padding: 0% 64px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section-box {
+    padding: 0% 199px;
+  }
+}
+
+.gradient {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(../img/mob_webp/ellipsegrad.png); */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: cover; */
+  border-radius: 414px;
+  opacity: 0.6000000238418579;
+  background: #91afba;
+  filter: blur(100px);
+  width: 600px;
+  height: 414px;
+  transform: rotate(-45.074deg);
+  position: relative;
+  top: 730px;
+}
+
+.gradiend {
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 414px;
+  opacity: 0.6000000238418579;
+  background: #91afba;
+  filter: blur(200px);
+  width: 600px;
+  height: 414px;
+  transform: rotate(-45.074deg);
+  position: relative;
+  top: 210px;
+  left: 630px;
 }
 
 .title-yachtsblock {
@@ -345,7 +387,7 @@
 
 @media only screen and (min-width: 375px) {
   .swiper-slide {
-    width: 335px;
+    max-width: 335px;
   }
 }
 
@@ -411,9 +453,10 @@
   }
 }
 
-/* .prev-icon {
-  fill: black;
-} */
+.prev-icon,
+.next-icon {
+  fill: #f6f5ef;
+}
 
 /* .body {
   position: relative;
