@@ -18,44 +18,78 @@
   }
 }
 
-.gradient {
-  border-radius: 414px;
-  opacity: 0.6000000238418579;
-  background: #91afba;
-  filter: blur(160px);
-
-  height: 414px;
-  transform: rotate(-45.074deg);
+.gradient-cont {
   position: relative;
-  top: 240px;
+}
+
+.gradient {
+  position: absolute;
+  width: 399px;
+  height: 250px;
+  transform: rotate(-44.916deg);
+
+  border-radius: 399px;
+  opacity: 0.6000000238418579;
+  background: #93abae;
+  filter: blur(130px);
+
+  /* background-size: cover;
+  animation: rotate 8s linear infinite;
+  left: -65px; */
 }
 
 @media only screen and (min-width: 768px) {
   .gradient {
-    border-radius: 414px;
-    opacity: 0.6000000238418579;
-    background: #91afba;
-    filter: blur(180px);
-    width: 600px;
-    height: 414px;
-    transform: rotate(-45.074deg);
-    position: relative;
-    top: 730px;
+    width: 399px;
+    /* height: 399px;
+    transform: rotate(-44.094deg);
+    border-radius: 399px; */
+    left: 51px;
   }
+}
+
+@media only screen and (min-width: 1280px) {
+  .gradient {
+    width: 500px;
+    /* height: 414px;
+    transform: rotate(-45.044deg);
+    border-radius: 414px; */
+    left: 290px;
+  }
+}
+
+.gradiend {
+  position: absolute;
+  width: 195px;
+  height: 195px;
+  transform: rotate(-44.916deg);
+  flex-shrink: 0;
+  border-radius: 190px;
+  opacity: 0.30000001192092896;
+  background: #a6a9b2;
+  filter: blur(100px);
+  background-size: cover;
+  animation: rotate 8s linear infinite;
+  right: 23px;
 }
 
 @media only screen and (min-width: 768px) {
   .gradiend {
-    border-radius: 80px;
-    opacity: 0.6000000238418579;
-    background: #91afba;
-    filter: blur(230px);
-    width: 600px;
-    height: 414px;
+    width: 304px;
+    height: 304px;
+    /* transform: rotate(-44.094deg);
+    border-radius: 304px;
+    right: 100px; */
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .gradiend {
+    width: 316px;
+    height: 316px;
     transform: rotate(-45.074deg);
-    position: relative;
-    top: 210px;
-    left: 540px;
+    border-radius: 316px;
+    right: 290px;
   }
 }
 
