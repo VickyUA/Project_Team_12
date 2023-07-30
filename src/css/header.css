@@ -1,17 +1,13 @@
 /*MOBILE MENU*/
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin: 0;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
-  border-radius: 50%;
   outline: none;
 }
 
@@ -22,6 +18,11 @@
 }
 
 .menu-container {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  overflow: auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -36,6 +37,10 @@
 }
 
 .menu-container.is-open {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
   transform: translateX(0);
 }
 
@@ -80,16 +85,14 @@
 .header-container {
   display: flex;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
   padding: 27px 20px 27px 20px;
+  justify-content: space-between;
 }
 /*TABLET*/
 @media only screen and (min-width: 768px) {
   .header-container {
     padding-left: 32px;
     padding-right: 32px;
-    justify-content: space-between;
   }
 }
 .header-logo-text {
@@ -111,8 +114,8 @@
   align-items: center;
 }
 .header-logo-yahts {
-  fill: #fff;
   stroke: #fff;
+  fill: aqua;
 }
 .header-navigation-container {
 }
