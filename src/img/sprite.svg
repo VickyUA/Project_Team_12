@@ -35,6 +35,9 @@
    <symbol id="rent-block-arrow" viewBox="0 0 64 32">
       <path d="M44.444.604 64 16 44.444 31.396V18.667H0v-5.333h44.444V.605z"/>
     </symbol>
+    <symbol id="icon-close-black" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.08" d="M24 8 8 24M8 8l16 16"/>
+    </symbol>
 </defs>
 </svg>
 

@@ -17,20 +17,56 @@
     padding-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) {
+    .rent-block {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .rent-container {
+        display: flex;
+        justify-content: center;
+        gap: 69px;
+    }
+   
+}
+
 .rent-block-title {
     color: var(--white-title-color);
     font-family: DM Sans, sans-serif;
     font-size: 36px;
-    font-style: normal;
     font-weight: 500;
     line-height: 110%;
     letter-spacing: -1.62px;
     margin-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+    .rent-block-title {
+        width: 287px;
+        color: var(--white-title-color);
+        font-family: DM Sans, sans-serif;
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: -2.7px;
+        margin-bottom: 32px;
+}
+}
+
 .rent-yacht-image {
     margin-bottom: 40px;
+    width: 259px;
+    height: 187px;
+
 }
+
+@media screen and (min-width: 768px) {
+.rent-yacht-image {
+    margin-bottom: 0px;
+    width: 271px;
+    }
+}
+
 
 input, textarea {
     font-family: inherit;
@@ -51,10 +87,16 @@ textarea {
     margin-bottom: 24px;
 }
 
+@media screen and (min-width: 768px) {
+    .rent-block-form {
+        gap: 28px;
+        margin-bottom: 28px;
+    }
+}
+
 .rent-block-label {}
 
 .rent-label-span {
-    color: var(--white-title-color);
     display: block;
 }
 
@@ -64,6 +106,13 @@ textarea {
     border-bottom: 1px solid var(--white-title-color);
     width: 335px;
     height: 34px;
+}
+
+@media screen and (min-width: 768px) {
+.rent-block-input {
+    width: 364px;
+    height: 35px;
+}
 }
 
 .rent-block-input:focus {
@@ -77,6 +126,12 @@ textarea {
     border: none;
     border-bottom: 1px solid var(--white-title-color);
     width: 335px;
+}
+
+@media screen and (min-width: 768px) {
+    .comment-input {
+    width: 364px;
+    }
 }
 
 .comment-input:focus {
@@ -97,6 +152,18 @@ input::placeholder, textarea::placeholder {
 
 input::placeholder {
     transform: translateY(-10px);
+}
+
+@media screen and (min-width: 768px) {
+    input::placeholder, textarea::placeholder {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: -0.72px;
+    }
+    input::placeholder {
+        transform: translateY(-9px);
+    }
+
 }
 
 .rent-block-btn {
