@@ -5,9 +5,10 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 120%;
+    line-height: 28.8px;
     letter-spacing: -1.08px;
     width: 335px;
+    text-align: left;
 }
 
 .accent-part {
@@ -18,16 +19,7 @@
     font-weight: 500;
     line-height: 28.8px;
     letter-spacing: -1.08px;
-}
-
-.about-text {
-    color: #F6F5EF;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 19.6px;
-    letter-spacing: -0.28px;
+    text-align: left;
 }
 
 .about-list {
@@ -35,6 +27,16 @@
     align-items: flex-start;
     gap: 14px;
     margin-top: 40px;
+}
+
+.about-text .about-text-2 {
+    color: #F6F5EF;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.6px;
+    letter-spacing: -0.28px;
 }
 
 .about-text {
@@ -45,4 +47,272 @@
 .about-text-2 {
     min-width: 161px;
     height: 180px;
+}
+
+@media only screen and (max-width: 767px) {
+    .about-yacht {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .accent-part {
+        color: #BEC7C2;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 28.8px;
+        letter-spacing: -1.08px;
+        text-align: left;
+        }
+
+    .about-title {
+        color: #F6F5EF;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28.8px;
+        letter-spacing: -1.08px;
+        width: 335px;
+        height: 145px;
+    }
+
+    .about-list {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 14px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .about-text .about-text-2 {
+        color: #F6F5EF;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19.6px;
+        letter-spacing: -0.28px;
+        }
+
+    .about-text {
+        min-width: 160px;
+        height: 220px
+    }
+    
+    .about-text-2 {
+        min-width: 161px;
+        height: 180px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .about-yacht {
+        display: flex;
+        text-align: center;
+        /*justify-content: center;*/
+        flex-wrap: wrap;
+         
+    }
+
+    .about-title {
+        color: #F6F5EF;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 38.4px;
+        letter-spacing: -1.44px;
+        width: 514px;
+        height: 152px;
+        text-align: left;
+        margin-top: 100px;
+    }
+
+    .accent-part {
+        color: #BEC7C2;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 38.4px;
+        letter-spacing: -1.44px;
+        text-align: left;
+    }
+
+    .about-text .about-text-2 {
+        color: #F6F5EF;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22.4px;
+        letter-spacing: -0.32px;
+}
+
+    .about-list {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 32px;
+        margin-top: 32px;
+        margin-bottom: 64px;
+        float: right;
+    }
+
+    .about-text {
+        max-width: 183px;
+        height: 220px;
+        text-align: left;
+        float: right;
+    }
+    
+    .about-text-2 {
+        max-width: 185px;
+        height: 198px;
+        text-align: left;
+        float: right;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 1157.98px) {
+.about-yacht {
+        display: flex;
+        text-align: center;
+        /*justify-content: center;*/
+        flex-wrap: wrap;
+        
+    }
+
+    .about-title {
+        color: #F6F5EF;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 38.4px;
+        letter-spacing: -1.44px;
+        width: 514px;
+        height: 152px;
+        text-align: left;
+    }
+
+    .accent-part {
+        color: #BEC7C2;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 38.4px;
+        letter-spacing: -1.44px;
+        text-align: left;
+    }
+
+    .about-text .about-text-2 {
+        color: #F6F5EF;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22.4px;
+        letter-spacing: -0.32px;
+    }
+
+    .about-list {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 32px;
+        margin-top: 40px;
+        margin-bottom: 64px;
+        float: right;
+        margin-left: 302px;
+        
+    }
+
+    .about-text {
+        max-width: 183px;
+        height: 242px;
+        text-align: left;
+        float: right;
+    }
+
+    .about-text-2 {
+        max-width: 185px;
+        height: 198px;
+        text-align: left;
+        float: right;
+    }
+
+    .about-yacht {
+        display: inline-block;
+        position: relative;
+    }
+}
+
+.about-img {
+   position: relative;
+}
+
+.section-pic-about {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/*.about-pic {
+   display: grid;
+   place-items: center;
+}*/
+
+@media only screen and (max-width: 767px) {
+    .about-pic-big {
+      width: 335px; 
+      height: 524px;
+  }
+    .about-pic-middle{
+      width: 335px;
+      height: 289px;
+  }
+    .about-pic-little{
+      width: 260px;
+      height: 244px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    .about-pic-big {
+      width: 704px;
+      height: 631px;
+    }
+
+    .about-pic-middle {
+      width: 308px;
+      height: 289px;
+    }
+
+    .about-pic-little {
+      width: 260px;
+      height: 244px;
+    }    
+}
+
+@media only screen and (min-width: 1157.98px) {
+    .about-pic-big {
+      width: 533px;
+      height: 473px;
+    }
+
+    .about-pic-middle {
+      width: 308px;
+      height: 289px;
+    }
+
+    .about-pic-little {
+      width: 260px;
+      height: 244px;
+    }
 }
