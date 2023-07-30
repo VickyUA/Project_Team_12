@@ -1,0 +1,155 @@
+/* Service Block Styles */
+
+.service-block {}
+
+.service-block-title {
+    display: none;
+}
+
+.service-block-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    /* outline: 1px solid red;
+    outline-offset: -2px; */
+}
+
+@media only screen and (min-width: 768px) {
+    .service-block-container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .service-block-container {
+        padding-top: 82px;
+        padding-bottom: 82px;
+    }
+}
+
+.service-block-list {}
+
+@media only screen and (min-width: 768px) {
+    .service-block-list {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .service-block-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 64px;
+        align-items: flex-end;
+        justify-content: space-evenly;
+    }
+}
+
+.service-block-item {
+    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+    .service-block-item:not(:last-child) {
+        padding-bottom: 24px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .service-block-item.fishing {
+        margin-left: auto;
+    }
+
+    .service-block-item.sunbathing {
+        margin-left: 32px;
+    }
+
+    .service-block-item:not(:last-child) {
+        padding-bottom: 32px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .service-block-item {
+        flex-basis: calc((100% - 64px) / 2);
+    }
+}
+
+.service-block-pic-diving {}
+
+@media only screen and (min-width: 1280px) {
+    .service-block-pic-diving {
+        max-width: 732px;
+        height: auto;
+    }
+}
+
+.service-block-pic-fishing {}
+
+@media only screen and (min-width: 1280px) {
+    .service-block-pic-fishing {
+        max-width: 440px;
+        height: auto;
+    }
+}
+
+.service-block-pic-sunbathing {}
+
+
+.service-block-subtile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    content: "";
+    left: 24px;
+
+    color: var(--main-darkblue-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.63px;
+    width: 95px;
+    height: 43px;
+    border-radius: 60px;
+    background: var(--white-title-color);
+}
+
+@media only screen and (min-width: 768px) {
+    .service-block-subtile {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -0.81px;
+        width: 106px;
+        height: 48px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .service-block-subtile {
+        width: 113px;
+    }
+}
+
+.service-block-subtile.diving {
+    bottom: 48px;
+}
+
+.service-block-subtile.fishing {
+    bottom: 48px;
+}
+
+.service-block-subtile.sunbathing {
+    bottom: 24px;
+}
+
+.service-block-img1 {}
+
+.service-block-img2 {}
+
+.service-block-img3 {}
+
+/* End Service Block Styles */
