@@ -1,6 +1,7 @@
 /* Hero.Developer:Prenrelo(Jarek) */
 .hero-tittle {
     max-width: 332px;
+    height: auto;
         font-family: DM Sans, sans-serif;
         font-size: 36px;
         font-weight: 500;
@@ -59,10 +60,17 @@
     display: flex;
     gap: 8px;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 @media only screen and (min-width: 768px) {
 .hero-btn-container  {
     gap: 11px;
+    margin-bottom: 64px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+.hero-btn-container  {
+    margin-bottom: 0;
   }
 }
 .hero-btn {
@@ -110,8 +118,19 @@ color: var(--white-title-color);
   }
 }
 .hero-rectangle {
-    background-color: #fff;
-    background-image: url();
+    
+    background-image: url(../img/heroimg/Rectangle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-list-img {
+    display: flex;
+    margin-bottom: 13px;
+}
+@media only screen and (min-width: 768px) {
+.hero-list-img {
+        margin-bottom: 11px;
+    }
 }
 .hero-clients {
     color:var(--main-darkblue-color);
