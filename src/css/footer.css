@@ -15,7 +15,7 @@ padding-top: 65px;
 .footer-container {
 display: flex;
 justify-content: space-between;
-align-items: baseline;
+justify-content: baseline;
   }
 }
 .footer-icon-img-logo {
@@ -24,7 +24,7 @@ align-items: baseline;
 }
 @media only screen and (min-width: 768px) {
   .footer-icon-img-logo {
-    width: 23px;
+  width: 23px;
   height: 23px;
   }
 }
@@ -38,7 +38,7 @@ line-height: 1.14;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 display: flex;
-align-items: baseline;
+justify-content: baseline;
 gap: 8px;
 }
 @media only screen and (min-width: 768px) {
@@ -164,7 +164,7 @@ height: 19px;
   width: 32px;
   height: 32px;
   border: 1px solid rgba(246, 245, 239, 0.50);
-  padding: 8px 8px;
+  padding: 9px 9px;
   border-radius: 6px;
   display: flex;
   justify-content: center;
@@ -179,6 +179,10 @@ height: 19px;
 .footer-icon-link:hover .footer-icons-social,
 .footer-icon-link:focus .footer-icons-social {
   fill: #A1B5BA;
+}
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  border: 1px solid #A1B5BA;
 }
 .footer-gradient {
   border-radius: 420px;
@@ -208,9 +212,9 @@ height: 19px;
   border-radius: 415px;
   background:#93ABAE;
   width: 415px;
-  height: 100px;
+  height: 80px;
   top: 250px;
-  right: 660px;
+  right: 760px;
    }
   .footer-gradient-second {
   border-radius: 317px;
