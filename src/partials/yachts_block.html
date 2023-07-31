@@ -1,19 +1,27 @@
-<!-- Yahts Block -->
-<section>
+<section class="yachtsblock container">
+  <div class="gradient-cont">
+    <div class="gradient"></div>
+    <div class="gradiend"></div>
+  </div>
   <div class="section-box">
     <h2 class="title-yachtsblock">
       Choose your dream yacht and sail away into the sunset
     </h2>
 
-    <button type="button" class="rental-btn">Yacht rental</button>
+    <form>
+      <input
+        class="rental-btn"
+        type="button"
+        onclick="window.location.href = '#rental';"
+        value="Yacht rental"
+      />
+    </form>
   </div>
 
   <!-- Cards -->
 
   <div class="swiper">
-    <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
-      <!-- Slides -->
       <div class="swiper-slide">
         <img
           class="yacht-link"
@@ -331,11 +339,24 @@
       </div>
     </div>
 
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
+    <div class="swiper-buttons">
+      <button class="swiper-button-prev">
+        <svg class="prev-icon" width="18" higth="8">
+          <use href="./img/sprite.svg#icon-arrow-left"></use>
+        </svg>
+      </button>
+      <button class="swiper-button-next">
+        <svg class="next-icon" width="18" higth="8">
+          <use href="./img/sprite.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
   </div>
+</section>
 
-  <!-- <div class="card-rental">
+<!-- <div class="card-rental">
     <div class="card-set">
       <ul class="card-set-list">
         <li class="card-item">
@@ -680,4 +701,3 @@
       <img src="../img/mob_webp/arrow_right.png" alt="button_rigth" />
     </div>
   </div> -->
-</section>

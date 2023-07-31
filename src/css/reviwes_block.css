@@ -2,7 +2,9 @@
     /* z-index: 999; */
 }
 
-.container {}
+.container {
+
+}
 
 .container-reviews {
     margin: 0;
@@ -16,11 +18,17 @@
     letter-spacing: 0.045em;
     color: var(--white, #F6F5EF);
     width: 335px;
+    line-height: 0.8;
+    letter-spacing: 0.04em;
+    max-width: 335px;
     margin-bottom: 24px;
 }
 
 .spn-reviews {
     color: #BEC7C2;
+    font-style: italic;
+    color: var(--light-green-color, #93abae);
+
 }
 
 .reviews-box {
@@ -30,12 +38,15 @@
 .reviews-text {
     color: var(--white, #F6F5EF);
     font-family: DM Sans, sans-serif;
+    font-family: DM Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.4;
     letter-spacing: 0.02em;
     width: 335px;
+    max-width: 335px;
+    margin-bottom: 40px;
 }
 
 .reviews-cards {}
