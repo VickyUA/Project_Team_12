@@ -1,31 +1,77 @@
 /* Hero.Developer:Prenrelo(Jarek) */
 .hero-tittle {
-    width: 332px;
+    max-width: 332px;
+    height: auto;
         font-family: DM Sans, sans-serif;
         font-size: 36px;
         font-weight: 500;
         line-height: 39.6px;
         letter-spacing: -1.62px;
+        margin: 0 auto;
         margin-bottom: 14px;
 }
 
+@media only screen and (min-width: 768px) {
+.hero-tittle  {
+    max-width: 698px;
+        font-size: 60px;
+        line-height: 66px;
+        letter-spacing: -2.7px;
+        margin-bottom: 16px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+.hero-tittle   {
+    max-width: 554px;
+  }
+}
 .hero-span {
     background: var(--linear-focus-color);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
+@media only screen and (min-width: 768px) {
+.hero-span  {
+        font-style: italic;
+  }
+}
 
 .hero-text {
-    width: 332px;
+    max-width: 332px;
         font-family: DM Sans, sans-serif;
         font-size: 14px;
         line-height: 19.6px;
         letter-spacing: -0.28px;
+        margin: 0 auto;
         margin-bottom: 24px;
 }
+@media only screen and (min-width: 768px) {
+.hero-text   {
+    min-width: 539px;
+        font-size: 16px;
+        line-height: 22.4px;
+        letter-spacing: -0.32px;
+        margin: unset;
+        margin-bottom: 32px;
+  }
+}
+
 .hero-btn-container {
     display: flex;
     gap: 8px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+.hero-btn-container  {
+    gap: 11px;
+    margin-bottom: 64px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+.hero-btn-container  {
+    margin-bottom: 0;
+  }
 }
 .hero-btn {
    min-width: 130px;
@@ -42,6 +88,13 @@
            display: block;
 
 }
+@media only screen and (min-width: 768px) {
+.hero-btn   {
+        font-size: 18px;
+        line-height: 19.8px;  
+        letter-spacing: -0.81px;
+  }
+}
 .hero-btn-explore {
 min-width: 130px;
 background-color: transparent;
@@ -57,8 +110,27 @@ color: var(--white-title-color);
             padding: 14px 28px;
             display: block;
 }
+@media only screen and (min-width: 768px) {
+.hero-btn-explore   {
+        font-size: 18px;
+        line-height: 19.8px;
+        letter-spacing: -0.81px;
+  }
+}
 .hero-rectangle {
-    background-color: #fff;
+    
+    background-image: url(../img/heroimg/Rectangle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-list-img {
+    display: flex;
+    margin-bottom: 13px;
+}
+@media only screen and (min-width: 768px) {
+.hero-list-img {
+        margin-bottom: 11px;
+    }
 }
 .hero-clients {
     color:var(--main-darkblue-color);
@@ -66,11 +138,14 @@ color: var(--white-title-color);
         font-size: 14px;
         font-weight: 700;
         line-height: 15.4px;
-        /* 15.4px */
         letter-spacing: 0.56px;
         text-transform: uppercase;
 }
-
+.hero-container-price {
+display: flex;
+align-items: center;
+gap: 14px;
+}
 .hero-price {
     color: var(--main-darkblue-color);
         font-family: DM Sans, sans-serif;
@@ -78,5 +153,25 @@ color: var(--white-title-color);
         line-height: 52.8px;
         letter-spacing: -2.16px;
 }
-
-.hero-dream {}
+@media only screen and (min-width: 768px) {
+.hero-price   {
+        font-size: 60px;
+        line-height: 66px;
+        letter-spacing: -2.7px; 
+  }
+}
+.hero-dream {
+    color:var(--main-darkblue-color);
+        font-family: DM Sans, sans-serif;
+        font-size: 14px;
+        line-height: 19.6px;
+        letter-spacing: -0.63px;
+}
+@media only screen and (min-width: 768px) {
+.hero-dream   {
+    max-width: 208px;
+        font-size: 18px;
+        line-height: 19.8px;
+        letter-spacing: -0.81px;
+  }
+}
