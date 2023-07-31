@@ -259,7 +259,7 @@
 @media only screen and (min-width: 768px) {
   .swiper {
     width: 714px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 }
 
@@ -315,7 +315,6 @@
   background-color: transparent;
   width: 46px;
   height: 36px;
-  margin-bottom: 80px;
 }
 
 :root {
@@ -323,7 +322,7 @@
 }
 
 .next-Icon {
-  padding: 14px 16px;
+  transform: translate(10px);
 }
 
 /* .swiper-button-next:after,
@@ -338,15 +337,15 @@
 
 .swiper-button-prev {
   position: relative;
-  top: 20px;
-  left: 100px;
+  top: 15px;
+  left: 112px;
 }
 
 @media only screen and (min-width: 768px) {
   .swiper-button-prev {
     max-width: 767px;
-    top: 20px;
-    left: 290px;
+    top: 18px;
+    left: 297px;
   }
 }
 
@@ -360,22 +359,22 @@
 
 .swiper-button-next {
   position: relative;
-  top: -86px;
+  top: -11px;
   right: -180px;
 }
 
 @media only screen and (min-width: 768px) {
   .swiper-button-next {
     max-width: 767px;
-    top: -85px;
+    top: -7px;
     right: -385px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .swiper-button-next {
-    max-width: 1440px;
-    top: -402px;
+    /* max-width: 1440px; */
+    top: -318px;
     right: -1025px;
   }
 }
@@ -383,6 +382,9 @@
 .prev-icon,
 .next-icon {
   fill: #f6f5ef;
+}
+
+.icon-next {
 }
 
 /* .card-rental {
