@@ -1,3 +1,7 @@
+.yachtsblock {
+  position: relative;
+}
+
 .section-box {
   max-width: 335px;
   height: auto;
@@ -17,6 +21,21 @@
     padding: 0% 199px;
   }
 }
+/* 
+@media only screen and (min-width: 1280px) {
+  .background-curves {
+    position: absolute;
+    width: 100%;
+    height: 1928px;
+    background-image: url(/src/img/mob_webp/LooperGroup.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    stroke-width: 1.458px;
+    stroke: #f6f5ef;
+    opacity: 0.5789473652839661;
+    z-index: 0;
+  }
+} */
 
 .gradient-cont {
   position: relative;
@@ -233,6 +252,23 @@
   }
 }
 
+.swiper {
+  width: 335px;
+}
+
+@media only screen and (min-width: 768px) {
+  .swiper {
+    width: 714px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .swiper {
+    width: 1089px;
+  }
+}
+
 .swiper-wrapper {
   display: flex;
   gap: 23px;
@@ -242,6 +278,11 @@
 @media only screen and (min-width: 768px) {
   .swiper-wrapper {
     gap: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .swiper-wrapper {
   }
 }
 
@@ -261,7 +302,7 @@
 
 @media only screen and (min-width: 768px) {
   .swiper-slide {
-    max-width: 354px;
+    max-width: 347px;
     height: 508px;
   }
 }
@@ -277,10 +318,28 @@
   margin-bottom: 80px;
 }
 
+:root {
+  --swiper-navigation-size: 20px;
+}
+
+.next-Icon {
+  padding: 14px 16px;
+}
+
+/* .swiper-button-next:after,
+.swiper-rtl.swiper-button-prev:after {
+  content: 'next';
+}
+
+.swiper-button-prev:after,
+.swiper-rtl.swiper-button-next:after {
+  content: 'prev';
+} */
+
 .swiper-button-prev {
   position: relative;
   top: 20px;
-  left: 120px;
+  left: 100px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -294,21 +353,21 @@
 @media only screen and (min-width: 1280px) {
   .swiper-button-prev {
     max-width: 1440px;
-    top: -275px;
+    top: -300px;
     left: 20px;
   }
 }
 
 .swiper-button-next {
   position: relative;
-  top: -74px;
-  right: -200px;
+  top: -86px;
+  right: -180px;
 }
 
 @media only screen and (min-width: 768px) {
   .swiper-button-next {
     max-width: 767px;
-    top: -74px;
+    top: -85px;
     right: -385px;
   }
 }
@@ -316,8 +375,8 @@
 @media only screen and (min-width: 1280px) {
   .swiper-button-next {
     max-width: 1440px;
-    top: -370px;
-    right: -1200px;
+    top: -402px;
+    right: -1025px;
   }
 }
 
