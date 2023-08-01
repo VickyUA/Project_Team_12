@@ -1,10 +1,4 @@
-.reviews-block {
-    /* z-index: 999; */
-}
 
-.container {
-
-}
 
 .container-reviews {
     margin: 0;
@@ -171,7 +165,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .reviews-block {}
 
     .reviews-box {
         display: flex;
@@ -199,7 +192,4 @@
         gap: 32px;
     }
 
-    .reviews-item {
-        /* gap: 32px; */
-    }
 }
