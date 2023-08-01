@@ -1,8 +1,115 @@
+.yachtsblock {
+  position: relative;
+}
+
 .section-box {
-  width: 335px;
+  max-width: 335px;
   height: auto;
   padding: 0 20px;
   margin-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-box {
+    max-width: 768px;
+    padding: 0% 64px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section-box {
+    padding: 0% 199px;
+  }
+}
+/* 
+@media only screen and (min-width: 1280px) {
+  .background-curves {
+    position: absolute;
+    width: 100%;
+    height: 1928px;
+    background-image: url(/src/img/mob_webp/LooperGroup.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    stroke-width: 1.458px;
+    stroke: #f6f5ef;
+    opacity: 0.5789473652839661;
+    z-index: 0;
+  }
+} */
+
+.gradient-cont {
+  position: relative;
+}
+
+.gradient {
+  position: absolute;
+  width: 399px;
+  height: 250px;
+  transform: rotate(-44.916deg);
+
+  border-radius: 399px;
+  opacity: 0.6000000238418579;
+  background: #93abae;
+  filter: blur(130px);
+
+  /* background-size: cover;
+  animation: rotate 8s linear infinite;
+  left: -65px; */
+}
+
+@media only screen and (min-width: 768px) {
+  .gradient {
+    width: 399px;
+    /* height: 399px;
+    transform: rotate(-44.094deg);
+    border-radius: 399px; */
+    left: 51px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .gradient {
+    width: 500px;
+    /* height: 414px;
+    transform: rotate(-45.044deg);
+    border-radius: 414px; */
+    left: 290px;
+  }
+}
+
+.gradiend {
+  position: absolute;
+  width: 195px;
+  height: 195px;
+  transform: rotate(-44.916deg);
+  flex-shrink: 0;
+  border-radius: 190px;
+  opacity: 0.30000001192092896;
+  background: #a6a9b2;
+  filter: blur(100px);
+  background-size: cover;
+  animation: rotate 8s linear infinite;
+  right: 23px;
+}
+
+@media only screen and (min-width: 768px) {
+  .gradiend {
+    width: 304px;
+    height: 304px;
+    /* transform: rotate(-44.094deg);
+    border-radius: 304px;
+    right: 100px; */
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .gradiend {
+    width: 316px;
+    height: 316px;
+    transform: rotate(-45.074deg);
+    border-radius: 316px;
+    right: 290px;
+  }
 }
 
 .title-yachtsblock {
@@ -11,7 +118,7 @@
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
-  line-height: 110%; /* 39.6px */
+  line-height: 1.1;
   letter-spacing: -1.62px;
   width: 310px;
   margin-bottom: 40px;
@@ -20,7 +127,7 @@
 @media only screen and (min-width: 768px) {
   .title-yachtsblock {
     font-size: 70px;
-    line-height: 110%; /* 77px */
+    line-height: 1.1;
     letter-spacing: -3.15px;
     width: 641px;
     margin-bottom: 64px;
@@ -30,7 +137,7 @@
 @media only screen and (min-width: 1280px) {
   .title-yachtsblock {
     font-size: 100px;
-    line-height: 110%; /* 110px */
+    line-height: 1.1;
     letter-spacing: -5.5px;
     width: 882px;
   }
@@ -46,7 +153,6 @@
   line-height: 1.1;
   letter-spacing: -0.045em;
   cursor: pointer;
-  /* display: block; */
   width: 131px;
   height: 43px;
   border: 1px solid #f6f5ef;
@@ -59,6 +165,224 @@
     width: 131px;
     height: 48px;
   }
+}
+
+.name-yachts {
+  color: #f6f5ef;
+  font-family: DM Sans, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.045em;
+}
+
+.luxury {
+  color: #f6f5ef;
+  opacity: 0.5;
+  font-family: DM Sans, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  padding-left: 24px;
+}
+
+.quality-list,
+.quantity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.quality-item {
+  color: var(--white, #f6f5ef);
+  font-family: DM Sans, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.quantity-item {
+  color: var(--white, #f6f5ef);
+  font-family: DM Sans, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.42px;
+}
+
+.title-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  margin-bottom: 24px;
+}
+
+.yacht-link {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-radius: 28px;
+  width: 299px;
+  height: 251px;
+}
+
+@media only screen and (min-width: 768px) {
+  .yacht-link {
+    width: 312px;
+    height: 268px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .yacht-link {
+    width: 322px;
+    height: 268px;
+  }
+}
+
+.swiper {
+  width: 335px;
+}
+
+@media only screen and (min-width: 768px) {
+  .swiper {
+    width: 714px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .swiper {
+    width: 1089px;
+  }
+}
+
+.swiper-wrapper {
+  display: flex;
+  gap: 23px;
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .swiper-wrapper {
+    gap: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .swiper-wrapper {
+  }
+}
+
+.swiper-slide {
+  background: #1f212d;
+  width: 320px;
+  height: 469px;
+  border-radius: 20px;
+  padding-top: 18px;
+}
+
+@media only screen and (min-width: 375px) {
+  .swiper-slide {
+    max-width: 335px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .swiper-slide {
+    max-width: 347px;
+    height: 508px;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgba(0, 0, 0, 0);
+  border: 1px solid #f6f5ef;
+  border-radius: 60px;
+  background-color: transparent;
+  width: 46px;
+  height: 36px;
+  margin-bottom: 80px;
+}
+
+:root {
+  --swiper-navigation-size: 20px;
+}
+
+.next-Icon {
+  padding: 14px 16px;
+}
+
+/* .swiper-button-next:after,
+.swiper-rtl.swiper-button-prev:after {
+  content: 'next';
+}
+
+.swiper-button-prev:after,
+.swiper-rtl.swiper-button-next:after {
+  content: 'prev';
+} */
+
+.swiper-button-prev {
+  position: relative;
+  top: 20px;
+  left: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+  .swiper-button-prev {
+    max-width: 767px;
+    top: 20px;
+    left: 290px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .swiper-button-prev {
+    max-width: 1440px;
+    top: -300px;
+    left: 20px;
+  }
+}
+
+.swiper-button-next {
+  position: relative;
+  top: -86px;
+  right: -180px;
+}
+
+@media only screen and (min-width: 768px) {
+  .swiper-button-next {
+    max-width: 767px;
+    top: -85px;
+    right: -375px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .swiper-button-next {
+    max-width: 1440px;
+    top: -402px;
+    right: -1025px;
+  }
+}
+
+.prev-icon,
+.next-icon {
+  fill: #f6f5ef;
 }
 
 /* .card-rental {
@@ -223,96 +547,7 @@
   top: 23px;
   left: 400px;
 } */
-
-.swiper-slide {
-  background: #1f212d;
-  width: 320px;
-  height: 469px;
-  border-radius: 20px;
-  padding-top: 18px;
-}
-
-.name-yachts {
-  color: #f6f5ef;
-  font-family: DM Sans, sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.045em;
-}
-
-.luxury {
-  color: #f6f5ef;
-  opacity: 0.5;
-  font-family: DM Sans, sans-serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-}
-
-.cont {
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-  padding-left: 24px;
-}
-
-.quality-list,
-.quantity-list {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.quality-item {
-  color: var(--white, #f6f5ef);
-  font-family: DM Sans, sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.18;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-}
-
-.quantity-item {
-  color: var(--white, #f6f5ef);
-  font-family: DM Sans, sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.18;
-  letter-spacing: 0.42px;
-}
-
-.title-card {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 24px;
-  margin-bottom: 24px;
-}
-
-.yacht-link {
-  margin: 0 auto;
-  margin-bottom: 24px;
-  border-radius: 28px;
-
-  width: 299px;
-  height: 251px;
-}
-
-.swiper-wrapper {
-  display: flex;
-  gap: 23px;
-  margin-bottom: 24px;
+/* .body {
   position: relative;
   height: 100%;
-}
-
-.body {
-  position: relative;
-  height: 100%;
-}
+} */
