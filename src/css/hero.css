@@ -1,4 +1,7 @@
 /* Hero.Developer:Prenrelo(Jarek) */
+.hero-section {
+    margin-bottom: 80px;
+}
 .hero-tittle {
     max-width: 332px;
     height: auto;
@@ -118,19 +121,38 @@ color: var(--white-title-color);
   }
 }
 .hero-rectangle {
-    
-    background-image: url(../img/heroimg/Rectangle.jpg);
+    position: relative;
+    background-image: url(./img/heroimg/Mask\ group335.png);
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 .hero-list-img {
     display: flex;
+    position: relative;
     margin-bottom: 13px;
+    margin-left: 24px;
+
 }
 @media only screen and (min-width: 768px) {
 .hero-list-img {
         margin-bottom: 11px;
     }
+}
+.hero-img-man1 {
+ 
+}
+
+.hero-img-woman {
+    left: -120px;
+        top: 25px;
+        z-index: 2;
+}
+
+.hero-img-man2 {
+top: 50px;
+    left: 55px;
+    z-index: 5;
 }
 .hero-clients {
     color:var(--main-darkblue-color);
@@ -140,11 +162,21 @@ color: var(--white-title-color);
         line-height: 15.4px;
         letter-spacing: 0.56px;
         text-transform: uppercase;
+        margin-left: 24px;
+        margin-bottom: 52px;
+}
+@media only screen and (min-width: 768px) {
+.hero-clients  {
+    margin-bottom: 111px;
+  }
 }
 .hero-container-price {
 display: flex;
 align-items: center;
 gap: 14px;
+margin-left: 24px;
+margin-right: 24px;
+padding-bottom: 48px;
 }
 .hero-price {
     color: var(--main-darkblue-color);
@@ -173,5 +205,20 @@ gap: 14px;
         font-size: 18px;
         line-height: 19.8px;
         letter-spacing: -0.81px;
+  }
+}
+.hero-img-ceo {
+position: absolute;
+top: 35px;
+right: -12px;
+
+}
+.hero-img-yacht {
+margin: 0 auto;
+margin-bottom: 14px;
+}
+@media only screen and (min-width: 768px) {
+.hero-img-yacht  {
+    margin-bottom: 22px;
   }
 }
