@@ -1,5 +1,11 @@
 .yachtsblock {
-  position: relative;
+  padding: 0 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .yachtsblock {
+    padding: 0 22px;
+  }
 }
 
 .section-box {
@@ -21,13 +27,13 @@
     padding: 0% 199px;
   }
 }
-/* 
+
 @media only screen and (min-width: 1280px) {
   .background-curves {
     position: absolute;
     width: 100%;
     height: 1928px;
-    background-image: url(/src/img/mob_webp/LooperGroup.png);
+    background-image: url(/src/img/mob_webp/loopergroup.png);
     background-repeat: no-repeat;
     background-position: center;
     stroke-width: 1.458px;
@@ -35,7 +41,7 @@
     opacity: 0.5789473652839661;
     z-index: 0;
   }
-} */
+}
 
 .gradient-cont {
   position: relative;
@@ -51,18 +57,11 @@
   opacity: 0.6000000238418579;
   background: #93abae;
   filter: blur(130px);
-
-  /* background-size: cover;
-  animation: rotate 8s linear infinite;
-  left: -65px; */
 }
 
 @media only screen and (min-width: 768px) {
   .gradient {
     width: 399px;
-    /* height: 399px;
-    transform: rotate(-44.094deg);
-    border-radius: 399px; */
     left: 51px;
   }
 }
@@ -70,9 +69,6 @@
 @media only screen and (min-width: 1280px) {
   .gradient {
     width: 500px;
-    /* height: 414px;
-    transform: rotate(-45.044deg);
-    border-radius: 414px; */
     left: 290px;
   }
 }
@@ -96,9 +92,6 @@
   .gradiend {
     width: 304px;
     height: 304px;
-    /* transform: rotate(-44.094deg);
-    border-radius: 304px;
-    right: 100px; */
   }
 }
 
@@ -253,19 +246,19 @@
 }
 
 .swiper {
-  width: 335px;
+  width: 320px;
 }
 
 @media only screen and (min-width: 768px) {
   .swiper {
     width: 714px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .swiper {
-    width: 1089px;
+    width: 1120px;
   }
 }
 
@@ -277,7 +270,7 @@
 
 @media only screen and (min-width: 768px) {
   .swiper-wrapper {
-    gap: 16px;
+    gap: 6px;
   }
 }
 
@@ -296,13 +289,20 @@
 
 @media only screen and (min-width: 375px) {
   .swiper-slide {
-    max-width: 335px;
+    width: 335px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .swiper-slide {
-    max-width: 347px;
+    max-width: 348px;
+    height: 508px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .swiper-slide {
+    max-width: 354px;
     height: 508px;
   }
 }
@@ -315,7 +315,6 @@
   background-color: transparent;
   width: 46px;
   height: 36px;
-  margin-bottom: 80px;
 }
 
 :root {
@@ -323,7 +322,7 @@
 }
 
 .next-Icon {
-  padding: 14px 16px;
+  transform: translate(10px);
 }
 
 /* .swiper-button-next:after,
@@ -338,35 +337,37 @@
 
 .swiper-button-prev {
   position: relative;
-  top: 20px;
-  left: 100px;
+  top: 5px;
+  left: 108px;
 }
 
 @media only screen and (min-width: 768px) {
   .swiper-button-prev {
     max-width: 767px;
-    top: 20px;
-    left: 290px;
+    top: 18px;
+    left: 297px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .swiper-button-prev {
-    max-width: 1440px;
-    top: -300px;
-    left: 20px;
+    max-width: 1280px;
+    top: -289px;
+    left: 0;
   }
 }
 
 .swiper-button-next {
   position: relative;
-  top: -86px;
-  right: -180px;
+  top: -20px;
+  right: -165px;
 }
 
 @media only screen and (min-width: 768px) {
   .swiper-button-next {
     max-width: 767px;
+    top: -8px;
+    right: -367px;
     top: -85px;
     right: -375px;
   }
@@ -374,15 +375,18 @@
 
 @media only screen and (min-width: 1280px) {
   .swiper-button-next {
-    max-width: 1440px;
-    top: -402px;
-    right: -1025px;
+    /* max-width: 1440px; */
+    top: -318px;
+    right: -1053px;
   }
 }
 
 .prev-icon,
 .next-icon {
   fill: #f6f5ef;
+}
+
+.icon-next {
 }
 
 /* .card-rental {
