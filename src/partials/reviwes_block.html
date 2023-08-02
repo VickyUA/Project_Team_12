@@ -1,4 +1,4 @@
-<section class="reviews-block">
+<section class="reviews-block id=reviews-block">
     <div class="container container-reviews">
         <div class="reviews-box">
             <h3 class="reviews-subtitle"><span class="spn-reviews">Yacht Adventures</span> take pride in providing the
@@ -70,7 +70,16 @@
                 </div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
+            <div class="swiper-pagination">
+                <span class="swiper-pagination-bullet"></span>
+            </div>
+        <button class=" button btn btn-sm btn-primary rounded-circle position-fixed bottom-0 end-0 translate-middle d-none"
+            onclick="scrollToTop()" id="back-to-up">
+            
+            <!-- <svg class="arrow-stroke" width="16" height="8">
+                <use href="./img/sprite.svg#icon-up-arrow"></use>
+            </svg> -->
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </button>
         </div>
 </section>
