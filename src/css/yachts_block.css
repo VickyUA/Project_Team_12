@@ -138,6 +138,7 @@
 
 .rental-btn {
   display: flex;
+  font-family: 'DM Sans', sans-serif;
   align-items: flex-start;
   gap: 10px;
   color: #f6f5ef;
