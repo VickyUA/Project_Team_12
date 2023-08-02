@@ -8,13 +8,10 @@
     font-family: DM Sans, sans-serif;
     font-size: 24px;
     font-weight: 500;
-    line-height: 1.16;
-    letter-spacing: 0.045em;
+    line-height: 120%;
+    letter-spacing: -1.08px;
     color: var(--white, #F6F5EF);
     width: 335px;
-    line-height: 0.8;
-    letter-spacing: 0.04em;
-    max-width: 335px;
     margin-bottom: 24px;
 }
 
@@ -32,12 +29,11 @@
 .reviews-text {
     color: var(--white, #F6F5EF);
     font-family: DM Sans, sans-serif;
-    font-family: DM Sans;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 1.4;
-    letter-spacing: 0.02em;
+    line-height: 140%;
+    /* 19.6px */
+    letter-spacing: -0.28px;
     width: 335px;
     max-width: 335px;
     margin-bottom: 40px;
@@ -89,7 +85,7 @@
     font-family: DM Sans, sans-serif;
     font-size: 12px;
     font-weight: 400;
-    line-height: 140%;
+    line-height: 16.8px;
     /* 16.8px */
     letter-spacing: -0.24px;
     width: 300px;
@@ -132,7 +128,16 @@
 
     .reviews-text {
         width: 273px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22.4px;
+        /* 22.4px */
+        letter-spacing: -0.32px;
+    }
 
+    .reviews-box .reviews-text:last-child{
+        
+        align-self: flex-end;
     }
 
     .reviews-image {
@@ -152,7 +157,7 @@
         width: 320px;
         font-size: 16px;
         font-weight: 400;
-        line-height: 140%;
+        line-height: 22.4px;
         /* 22.4px */
         letter-spacing: -0.32px;
     }
@@ -160,7 +165,7 @@
     .cards-subtitle {
         font-size: 18px;
         font-weight: 500;
-        line-height: 110%;
+        line-height: 19.8px;
         /* 19.8px */
         letter-spacing: -0.81px;
     }
@@ -185,7 +190,7 @@
         width: 320px;
         font-size: 16px;
         font-weight: 400;
-        line-height: 140%;
+        line-height: 22.4px;
         /* 22.4px */
         letter-spacing: -0.32px;
     }
@@ -203,8 +208,7 @@
 
 
 @media screen and (max-width: 1280px){
-    .swipper-pagination {
+    .swipper .swiper-pagination:last-child {
         display: none;
-        
     }
 }
