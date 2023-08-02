@@ -44,47 +44,31 @@
 }
 
 .swiper {
-    width: 100%;
-}
-
-.swiper-slide {
-    width: 100%;
-    height: 35em;
-    display: flex;
-    flex-direction: column;
-}
-
-.reviews-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 335px;
-    height: 208px;
-    padding: 24px 0;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    flex-shrink: 0;
+    overflow: hidden;
     margin-bottom: 80px;
 }
 
-.reviews-item {
-    background-color: #1F212D;
+.swiper-wrapper{
     position: relative;
-    padding: 24px;
-    border-radius: 24px;
-    width: 335px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+    box-sizing: content-box;
 }
 
-.reviews-image {
-    border-radius: 72px;
-    width: 48px;
-    height: 48px;
+.swiper-slide-rev {
+    background-color: #1F212D;
     position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    align-items: flex-start;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-    box-shadow: 0px 2px 32px 4px rgba(18, 20, 23, 0.02) inset;
+    border-radius: 24px;
+    width: 335px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 24px;
 }
 
 .cards-subtitle {
@@ -108,8 +92,23 @@
     line-height: 140%;
     /* 16.8px */
     letter-spacing: -0.24px;
+    width: 300px;
 }
 
+.swiper-pagination{
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.swiper-pagination-bullet{
+    background-color: #88B3B9;
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    font-size: 14px;
+    left: 0;
+}
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     .reviews-box {
         display: flex;
@@ -147,7 +146,12 @@
         height: 56px;
     }
 
+    .swiper{
+        margin-bottom: 45px;
+    }
+
     .cards-text {
+        width: 320px;
         font-size: 16px;
         font-weight: 400;
         line-height: 140%;
@@ -168,7 +172,7 @@
 
     .reviews-box {
         display: flex;
-
+        justify-content: space-between;
     }
 
     .reviews-subtitle {
@@ -180,7 +184,7 @@
     }
 
     .reviews-text {
-        width: 273px;
+        width: 320px;
         font-size: 16px;
         font-weight: 400;
         line-height: 140%;
@@ -188,8 +192,19 @@
         letter-spacing: -0.32px;
     }
 
-    .reviews-list {
-        gap: 32px;
+    .swiper{
+        margin-bottom: 64px;
     }
 
+    .swiper-slide-rev{
+        width: 384px;
+        padding: 32px;
+    }
+
+}
+
+@media screen and (max-width: 1280px){
+    .swipper-pagination {
+        display: none;
+    }
 }
