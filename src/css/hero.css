@@ -136,7 +136,7 @@ color: var(--white-title-color);
 .hero-rectangle {
   position: relative;
   background-image:
-  url(../img/heroimg/Mask-group335.png);
+  url(./img/heroimg/Mask-group335.png);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 335px;
@@ -146,7 +146,7 @@ color: var(--white-title-color);
   .hero-rectangle{
           
       background-image: 
-    url(../img/heroimg/Mask-group335@2x.png);
+    url(./img/heroimg/Mask-group335@2x.png);
       
     }
   } 
