@@ -3,6 +3,7 @@
 border-top: 1px solid rgba(246, 245, 239, 0.20);
 padding-top: 41px;
 position: relative;
+overflow: hidden;
 }
 @media only screen and (min-width: 768px) {
 .footer-section {
@@ -150,24 +151,12 @@ margin-bottom: 16px;
   }
 }
 
-.footer-icons-social {
-fill: var(--white-title-color);
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4,0,0.2,1);
-transition-property: fill;
-}
-
-@media only screen and (min-width: 768px) {
-  .footer-icons-social {
-width: 19px;
-height: 19px;
-  }
-}
 .footer-icon-link {
+  background: linear-gradient(#11131F, #11131F) padding-box,
+    linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%) border-box;
   width: 32px;
   height: 32px;
   border: 1px solid rgba(246, 245, 239, 0.50);
-  padding: 9px 9px;
   border-radius: 6px;
   display: flex;
   justify-content: center;
@@ -178,28 +167,36 @@ height: 19px;
 }
 @media only screen and (min-width: 768px) {
   .footer-icon-link {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
   }
 }
-.footer-icon-link:hover .footer-icons-social,
-.footer-icon-link:focus .footer-icons-social {
-  fill:#BEC7C2;
+.footer-icons-social {
+  fill: var(--white-title-color);
+  transition-duration: 250ms;
+ transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+ transition-property: fill;
+}
+@media only screen and (min-width: 768px) {
+  .footer-icons-social {
+  width: 18px;
+  height: 18px;
+  }
 }
 .footer-icon-link:hover,
 .footer-icon-link:focus {
-  border: 1px solid #BEC7C2;
+  border-color: transparent;
 }
-
-/* .iсon-gradient {
-  fill: transparent;
-} */
+.footer-icon-link:hover .footer-icons-social,
+.footer-icon-link:focus .footer-icons-social {
+  fill: url('#linear');
+}
 .footer-container::after {
   content: '';
   position: absolute;
   width: 420px;
-  height: 100px;
-  transform: rotate(-0.089deg);
+  height: 420px;
+  transform: rotate(-45.408deg);
   border-radius: 420px;
   opacity: 0.6000000238418579;
   background: #93ABAE;
@@ -214,14 +211,10 @@ height: 19px;
 @media only screen and (min-width: 768px) {
   .footer-container::after {
     content: '';
-    position: absolute;
     width: 419px;
-    height: 100px;
-    transform: rotate(-0.089deg);
+    height: 419px;
+    transform: rotate(-45.565deg);
     border-radius: 419px;
-    opacity: 0.6000000238418579;
-    background: #93ABAE;
-    filter: blur(100px);
     top: 264px ;
     left: 220px;
     
@@ -230,14 +223,10 @@ height: 19px;
 @media only screen and (min-width: 1280px) {
 .footer-container::after {
 content: '';
-position: absolute;
 width: 415px;
-height: 100px;
-transform: rotate(-0.089deg);
+height: 415px;
+transform: rotate(-45.044deg);
 border-radius: 415px;
-opacity: 0.6000000238418579;
-background: #93ABAE;
-filter: blur(100px);
 top:257px ;
 left: 225px;
     
@@ -246,8 +235,8 @@ left: 225px;
 content: '';
 position: absolute;
 width: 317px;
-height: 50px;
-transform: rotate(-0.089deg);
+height: 317px;
+transform: rotate(-45.044deg);
 border-radius: 317px;
 opacity: 0.6000000238418579;
 background:#A6A9B2;
