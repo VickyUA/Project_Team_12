@@ -16,6 +16,7 @@
 
 .spn-reviews {
     color: #BEC7C2;
+    font-family: DM Sans, sans-serif;
 }
 
 .reviews-box {
@@ -98,6 +99,27 @@
     line-height: 13px;
     font-size: 14px;
     left: 0;
+}
+
+.swiper-pagination-bullet::after{
+
+}
+
+.button{
+    background-color: #93ABAE;
+    border-radius: 8px;
+    width: 68px;
+    height: 68px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.arrow-stroke{
+    fill:#f6f5ef;
+    display: block;
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     .reviews-box {
