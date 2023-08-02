@@ -91,7 +91,6 @@
 }
 
 .mobile-menu .mobile-link {
-  display: block;
   padding: 10px;
   text-decoration: none;
   color: var(--white, #f6f5ef);
