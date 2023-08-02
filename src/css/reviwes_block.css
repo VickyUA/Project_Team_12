@@ -109,6 +109,9 @@
     font-size: 14px;
     left: 0;
 }
+
+
+
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     .reviews-box {
         display: flex;
@@ -132,15 +135,6 @@
 
     }
 
-    .reviews-list {
-        gap: 16px;
-        margin-bottom: 145px;
-    }
-
-    .reviews-item {
-        width: 344px;
-    }
-
     .reviews-image {
         width: 56px;
         height: 56px;
@@ -148,6 +142,10 @@
 
     .swiper{
         margin-bottom: 45px;
+    }
+
+    .swiper-slide-rev{
+        margin: 8px;
     }
 
     .cards-text {
@@ -198,13 +196,15 @@
 
     .swiper-slide-rev{
         width: 384px;
-        padding: 32px;
+        margin: 16px;
     }
 
 }
 
+
 @media screen and (max-width: 1280px){
     .swipper-pagination {
         display: none;
+        
     }
 }
