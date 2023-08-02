@@ -44,7 +44,7 @@
     width: 1588px;
     z-index: -1;
     transform: rotate(359deg);
-    background-image: url(./img/mob_webp/loopergroup.png);
+    background-image: url(/img/mob_webp/loopergroup.png);
     background-repeat: no-repeat;
 
     height: 1980px;
