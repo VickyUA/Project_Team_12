@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -14,23 +19,66 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Header.Developer:PolishukAlexandr(Olexandr Polishuk)-->
-    <load src="partials/header.html" />
-    <!-- Hero.Developer:Prenrelo(Jarek)  -->
-    <load src="partials/hero.html" />
-    <!-- About.Developer:irynatrysh(Iryna Trysh)-->
-    <load src="partials/about.html" />
-    <!--Yachts Block.Developer:MarkBellinzon(Марк Беллінзон) -->
-    <load src="partials/yachts_block.html" />
-    <!--Service Block.Developer:Balinskiy(Юрій Балінський)-->
-    <load src="partials/service_block.html" />
-    <!--Rent Block.Developer:vickyUA(Вікторія Поліщук)-->
-    <load src="partials/rent_block.html" />
-    <!-- Reviewes Block.Developer:7Karina(Каріна Крамаренко) -->
-    <load src="partials/reviwes_block.html" />
-    <!--Footer.Developer:turasova(Юлія Турасова ) -->
-    <load src="partials/footer.html" />
+    <header>
+      <!-- Header.Developer:PolishukAlexandr(Olexandr Polishuk)-->
+      <load src="partials/header.html" />
+    </header>
+    <main>
+      <!-- Hero.Developer:Prenrelo(Jarek)  -->
+      <load src="partials/hero.html" />
+      <!-- About.Developer:irynatrysh(Iryna Trysh)-->
+      <load src="partials/about.html" />
+      <!--Yachts Block.Developer:MarkBellinzon(Марк Беллінзон) -->
+      <load src="partials/yachts_block.html" />
+      <!--Service Block.Developer:Balinskiy(Юрій Балінський)-->
+      <load src="partials/service_block.html" />
+      <!--Rent Block.Developer:vickyUA(Вікторія Поліщук)-->
+      <load src="partials/rent_block.html" />
+      <!-- Reviewes Block.Developer:7Karina(Каріна Крамаренко) -->
+      <load src="partials/reviwes_block.html" />
+      <!-- Swipe up arrow.Developer: (Олександра Воловик)-->
+      <load src="partials/swipe-up-arrow.html" />
+    </main>
+    <footer>
+      <!--Footer.Developer:turasova(Юлія Турасова ) -->
+      <load src="partials/footer.html" />
+    </footer>
 
+    <script>
+      const ACTIVE_CLASS_NAME = 'modal-active';
+      const successModal = document.querySelector('.thank-modal');
+      const form = document.querySelector('.modal-form');
+      const openFormModalBtn = document.querySelector('.open-modal-btn');
+      const closeBtns = document.querySelectorAll('.close-btn');
+      openFormModalBtn.setAttribute('disabled', true);
+      const emailInput = document.querySelector('.modal-field-input');
+      emailInput.addEventListener('input', changeInput);
+      function changeInput() {
+        if (emailInput.value.length !== 0) {
+          openFormModalBtn.removeAttribute('disabled');
+        }
+      }
+      const closeFormModal = () => {
+        successModal.classList.remove(ACTIVE_CLASS_NAME);
+      };
+      closeBtns.forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.stopPropagation();
+          closeFormModal();
+        });
+      });
+      function clearFormFields() {
+        const modalFields = form.querySelectorAll('input');
+        modalFields.forEach(field => {
+          field.value = '';
+        });
+      }
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        successModal.classList.add(ACTIVE_CLASS_NAME);
+        clearFormFields();
+      });
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
@@ -38,6 +86,7 @@
     ></script>
     <script src="./js/back_to_top.js"></script>
     <script src="../src/js/mobile_menu.js"></script>
+    <script src="./src/js/mobile_menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
