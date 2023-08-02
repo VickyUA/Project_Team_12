@@ -130,7 +130,7 @@
 }
 .hero-rectangle {
   position: relative;
-  background-image: url(./img/heroimg/Mask-group335@2x.png);
+  background-image: url(/img/heroimg/Mask-group335@2x.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
