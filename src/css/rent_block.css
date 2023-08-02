@@ -138,27 +138,6 @@ textarea {
     resize: none;
 }
 
-.modal-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    margin-bottom: 24px;
-}
-
-@media screen and (min-width: 768px) {
-    .modal-form {
-        gap: 28px;
-        margin-bottom: 28px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .modal-form {
-        margin-bottom: 64px;
-    }
-}
-
 .modal-field-name {
     color: var(--white-title-color);
     font-family: DM Sans, sans-serif;
@@ -185,17 +164,19 @@ textarea {
     border-bottom: 1px solid var(--white-title-color);
     width: 335px;
     height: 16px;
+    margin-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {
     .modal-field-input {
         width: 364px;
+        margin-bottom: 28px;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .modal-field-input {
-        width: 443px;
+        width: 443px;        
     }
 }
 
@@ -211,17 +192,20 @@ textarea {
     border-bottom: 1px solid var(--white-title-color);
     width: 335px;
     height: 58px;
+    margin-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {
     .comment-input {
         width: 364px;
+        margin-bottom: 32px;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .comment-input {
         width: 443px;
+        margin-bottom: 64px;
     }
 }
 
@@ -243,6 +227,7 @@ textarea {
     font-weight: 700;
     line-height: 110%;
     letter-spacing: -0.63px;
+    transition: scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -260,12 +245,14 @@ textarea {
 .open-modal-btn:hover .rent-block-arrow,
 .open-modal-btn:focus .rent-block-arrow {
     fill: var(--light-green-color);
+    scale: 1.1;
 }
 
 .open-modal-btn:hover,
 .open-modal-btn:focus {
     color: var(--light-green-color);
     border: 1px solid var(--light-green-color);
+    scale: 1.1;
 }
 
 .modal-bgd {
@@ -347,6 +334,11 @@ textarea {
     background-color: transparent;
     stroke: var(--white-title-color);
     border: none;
+    transition: scale 500ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.close-btn:hover, .close-btn:focus {
+    scale: 1.2;
 }
 
 @media screen and (min-width: 768px) {
