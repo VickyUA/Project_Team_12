@@ -57,8 +57,6 @@
     }
 }
 
-.service-block-list {}
-
 @media only screen and (min-width: 768px) {
     .service-block-list {
         display: flex;
@@ -97,12 +95,6 @@
 
     .service-block-item:not(:last-child) {
         padding-bottom: 32px;
-    }
-}
-
-@media only screen and (min-width: 1280px) {
-    .service-block-item {
-        flex-basis: calc((100% - 64px) / 2);
     }
 }
 
@@ -153,27 +145,6 @@
 
 .service-block-subtile.sunbathing {
     bottom: 24px;
-}
-
-/* @media only screen and (min-width: 1280px) {
-    .service-block-img-diving {
-        max-width: 712px;
-        height: auto;
-    }
-}
-
-@media only screen and (min-width: 1280px) {
-    .service-block-img-fishing {
-        max-width: 440px;
-        height: auto;
-    }
-} */
-
-@media only screen and (min-width: 1280px) {
-    .service-block-img-sunbathing {
-        max-width: 436px;
-        height: auto;
-    }
 }
 
 /* End Service Block Styles */
