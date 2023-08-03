@@ -7,6 +7,7 @@
     position: fixed;
     bottom: 32px;
     right: 32px;
+    z-index: 999;
 }
 
 .button-top {
@@ -19,6 +20,4 @@
 }
 
 .btn-back{
-    /* width: 30px;
-    height: 16px; */
 }
