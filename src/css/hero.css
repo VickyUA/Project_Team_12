@@ -1,4 +1,4 @@
-/* Hero.Developer:Prenrelo(Jarek) */
+/* Hero.Developer:Prenrelo(Jarek) and Yuliya Turasova */
 .hero-section {
   margin-bottom: 164px;
   position: relative;
@@ -12,7 +12,7 @@
   transform: rotate(-44.916deg);
   border-radius: 279px;
   opacity: 0.9;
-  background: #939CAC;
+  background: var( --color-blur-one);
   filter: blur(100px);
   top:413px;
   right: 176px;
@@ -26,7 +26,7 @@
   transform: rotate(-45.094deg);
   border-radius: 414px;
   opacity: 0.9;
-  background: #939CAC;
+  background: var( --color-blur-one);
   filter: blur(100px);
   top:552px;
   right: 540px;
@@ -41,7 +41,7 @@
     transform:  rotate(-45.079deg);
     border-radius: 414px;
     opacity: 0.6;
-    background: #91AFBA;
+    background: var(--color-blur-two);
     filter: blur(100px);
     top: 227px;
     right: 1118px;
@@ -54,7 +54,7 @@
     transform:  rotate(-45.074deg);
     border-radius: 316px;
     opacity: 0.3;
-    background: #A6A9B2;
+    background: var(--color-blur-three);
     filter: blur(100px);
     top: 248px;
     right: 740px;
@@ -87,7 +87,6 @@
   max-width: 698px;
   font-size: 60px;
   line-height: 1.1;
-  /* letter-spacing: -2.7px; */
   margin-bottom: 16px;
 }
 }
@@ -126,23 +125,21 @@
       margin-bottom: 32px;
 }
 }
-
-.hero-btn-container {
-  display: flex;
-  gap: 8px;
-  margin: 0 auto;
-  margin-bottom: 40px;
+.hero-btn-list {
+display: flex;
+gap:8px;
+margin-bottom: 34px;
 }
 @media only screen and (min-width: 768px) {
-.hero-btn-container  {
-  gap: 11px;
-  margin-bottom: 64px;
-}
+  .hero-btn-list {
+    gap:11px;
+    margin-bottom: 64px;
+  }
 }
 @media only screen and (min-width: 1280px) {
-.hero-btn-container  {
-  margin-bottom: 0;
-}
+  .hero-btn-list {
+    margin-bottom: 0;
+  }
 }
 .hero-btn {
  min-width: 130px;
@@ -154,7 +151,7 @@
       letter-spacing: -0.63px;
       border: 0;
       border-radius: 60px;
-          background: var(--light-green, #93ABAE);
+          background: var( --light-green-color);
           padding: 14px 28px;
          display: block;
 
