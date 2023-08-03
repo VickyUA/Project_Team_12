@@ -40,39 +40,39 @@
 .rent-container::after 
 {
     content: "";
-    width: 283px;
-    height: 283px;
+    width: 183px;
+    height: 183px;
     transform: rotate(-44.916deg);
     flex-shrink: 0;
-    border-radius: 283px;
+    border-radius: 183px;
     opacity: 0.6000000238418579;
     background: #91AFBA;
     filter: blur(100px);
     position: absolute;
     top: 400px;
-    left: 202px;
+    left: 150px;
     z-index: -10;
 }
 
 @media screen and (min-width: 768px) {
     .rent-container::after {
-        width: 413px;
-        height: 413px;
+        width: 313px;
+        height: 313px;
         transform: rotate(-44.094deg);
-        border-radius: 413px;
+        border-radius: 313px;
         top: 75px;
-        left: 600px;
+        left: 400px;
 }
 }
 
 @media screen and (min-width: 1280px) {
     .rent-container::after {
-        width: 414px;
-        height: 414px;
+        width: 314px;
+        height: 314px;
         transform: rotate(-45.074deg);
-        border-radius: 414px;
+        border-radius: 314px;
         top: 114px;
-        left: 1065px;
+        left: 715px;
     }
 }
 
