@@ -1,4 +1,4 @@
-/* Hero.Developer:Prenrelo(Jarek) */
+/* Hero.Developer:Prenrelo(Jarek) and Yuliya Turasova */
 .hero-section {
   margin-bottom: 164px;
   position: relative;
@@ -87,7 +87,6 @@
   max-width: 698px;
   font-size: 60px;
   line-height: 1.1;
-  /* letter-spacing: -2.7px; */
   margin-bottom: 16px;
 }
 }
@@ -126,23 +125,21 @@
       margin-bottom: 32px;
 }
 }
-
-.hero-btn-container {
-  display: flex;
-  gap: 8px;
-  margin: 0 auto;
-  margin-bottom: 40px;
+.hero-btn-list {
+display: flex;
+gap:8px;
+margin-bottom: 34px;
 }
 @media only screen and (min-width: 768px) {
-.hero-btn-container  {
-  gap: 11px;
-  margin-bottom: 64px;
-}
+  .hero-btn-list {
+    gap:11px;
+    margin-bottom: 64px;
+  }
 }
 @media only screen and (min-width: 1280px) {
-.hero-btn-container  {
-  margin-bottom: 0;
-}
+  .hero-btn-list {
+    margin-bottom: 0;
+  }
 }
 .hero-btn {
  min-width: 130px;
