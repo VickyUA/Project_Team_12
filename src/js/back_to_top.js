@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 5); 
     };
 });
-=======
+
 window.onscroll = () => {
     toggleTopButton();
 }
